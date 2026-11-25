@@ -1,0 +1,167 @@
+.vc-people-search-suggest {
+    margin-bottom: 12px;
+    padding: var(--space-12) var(--space-8);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    background: var(--background-surface-high);
+    box-shadow: var(--shadow-high);
+}
+
+.vc-people-search-suggest-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-8);
+}
+
+.vc-people-search-suggest-row {
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.vc-people-search-suggest-row:hover,
+.vc-people-search-suggest-row[aria-selected="true"] {
+    background: var(--background-mod-subtle);
+}
+
+.vc-people-search-builder {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    background: var(--background-mod-subtle);
+}
+
+.vc-people-search-builder-row,
+.vc-people-search-builder-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 8px;
+}
+
+.vc-people-search-builder-checks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-default);
+}
+
+.vc-people-search-builder-label {
+    min-width: 80px;
+}
+
+.vc-people-search-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    color: var(--text-default);
+}
+
+.vc-people-search-count {
+    padding: var(--space-4) var(--space-8);
+}
+
+.vc-people-search-similarity {
+    display: flex;
+    flex: 1 1 240px;
+    align-items: center;
+    gap: 12px;
+}
+
+.vc-people-search-similarity > :last-child {
+    flex: 1;
+}
+
+.vc-people-search-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+    gap: 4px;
+    padding: 4px;
+}
+
+.vc-people-search-tile {
+    overflow: hidden;
+    aspect-ratio: 1;
+    border-radius: var(--radius-sm);
+    background: var(--background-mod-subtle);
+    cursor: pointer;
+}
+
+.vc-people-search-tile:hover,
+.vc-people-search-tile:focus-visible {
+    outline: 2px solid var(--text-brand);
+}
+
+.vc-people-search-tile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vc-people-search-results {
+    max-height: 50vh;
+}
+
+.vc-people-search-sentinel {
+    height: 1px;
+}
+
+.vc-people-search-row {
+    display: flex;
+    gap: 12px;
+    padding: 8px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.vc-people-search-row:hover,
+.vc-people-search-row:focus-visible {
+    background: var(--background-mod-subtle);
+}
+
+.vc-people-search-info {
+    min-width: 0;
+}
+
+.vc-people-search-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+}
+
+.vc-people-search-tag {
+    padding: 1px 6px;
+    border-radius: var(--radius-xs);
+    background: var(--background-mod-strong);
+    color: var(--text-default);
+}
+
+.vc-people-search-bio {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.vc-people-search-highlight {
+    border-radius: 2px;
+    background: color-mix(in oklab, var(--background-feedback-warning) 45%, transparent);
+    color: var(--text-strong);
+}
+
+.vc-people-search-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.vc-people-search-empty {
+    padding: 32px 16px;
+    text-align: center;
+}
